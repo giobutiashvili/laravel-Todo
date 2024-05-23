@@ -14,6 +14,7 @@
     </head>
     <body>
         <div id="app"></div>
+        <label for="title">სიახლის სათაური</label><input id="title" type="text" name="title" class="@error('title') is-invalid @enderror">@error('title') <div class="alert alert-danger">{{ $message }}</div>@enderror
         @vite('resources/js/app.js')
     </body>
 </html>

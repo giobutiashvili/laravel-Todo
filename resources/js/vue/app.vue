@@ -2,6 +2,7 @@
     <div class="todoListContainer">
         <div class="heading">
             <h2 id="title">Todo List</h2>
+
             <addItemForm v-on:reloadlist="getList()" />
         </div>
         <listView :items="items" v-on:reloadlist="getList()" />
